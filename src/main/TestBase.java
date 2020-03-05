@@ -17,7 +17,7 @@ public class TestBase implements Locators {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("https://www.spicejet.com/");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		CommonMethods.onclick(driver, roundTrip);
 		CommonMethods.selection(driver, source,"Pune");
 		CommonMethods.selection(driver, destination	,"Mumbai");
